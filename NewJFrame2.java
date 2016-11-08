@@ -58,40 +58,40 @@ public class NewJFrame2 extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        panelinfo.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Thông tin sinh viên", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tahoma", 1, 14), new java.awt.Color(51, 51, 255))); // NOI18N
+        panelinfo.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Thong tin sinh vien", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tahoma", 1, 14), new java.awt.Color(51, 51, 255))); // NOI18N
         panelinfo.setForeground(new java.awt.Color(255, 51, 51));
 
         jLabel1.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(51, 51, 255));
-        jLabel1.setText("MÃ SV:");
+        jLabel1.setText("Ma SV:");
 
         jLabel5.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         jLabel5.setForeground(new java.awt.Color(51, 51, 255));
-        jLabel5.setText("TÊN SV:");
+        jLabel5.setText("Ten SV:");
 
         jLabel6.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         jLabel6.setForeground(new java.awt.Color(51, 51, 255));
-        jLabel6.setText("NGÀY SINH:");
+        jLabel6.setText("Ngay Sinh:");
 
         jLabel7.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         jLabel7.setForeground(new java.awt.Color(51, 51, 255));
-        jLabel7.setText("NƠI SINH:");
+        jLabel7.setText("Noi Sinh");
 
         jLabel8.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         jLabel8.setForeground(new java.awt.Color(51, 51, 255));
-        jLabel8.setText("ĐỊA CHỈ:");
+        jLabel8.setText("Dia Chi:");
 
         jLabel9.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         jLabel9.setForeground(new java.awt.Color(51, 51, 255));
-        jLabel9.setText("ĐIỆN THOẠI:");
+        jLabel9.setText("SDT:");
 
         jLabel10.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         jLabel10.setForeground(new java.awt.Color(51, 51, 255));
-        jLabel10.setText("GIỚI TÍNH:");
+        jLabel10.setText("Gioi Tinh");
 
         jLabel11.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         jLabel11.setForeground(new java.awt.Color(51, 51, 255));
-        jLabel11.setText("LỚP:");
+        jLabel11.setText("Lop:");
 
         tensv.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -117,7 +117,7 @@ public class NewJFrame2 extends javax.swing.JFrame {
             }
         });
 
-        gioitinh.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Nam\t", "Nữ", "Không rõ", "Không có" }));
+        gioitinh.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Nam\t", "Nu", "Khong ro", "Không co" }));
         gioitinh.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 gioitinhActionPerformed(evt);
@@ -141,7 +141,7 @@ public class NewJFrame2 extends javax.swing.JFrame {
                     .addComponent(masv)
                     .addComponent(ngaysinh, javax.swing.GroupLayout.DEFAULT_SIZE, 207, Short.MAX_VALUE)
                     .addComponent(noisinh))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 139, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 151, Short.MAX_VALUE)
                 .addGroup(panelinfoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addGroup(panelinfoLayout.createSequentialGroup()
                         .addComponent(jLabel8)
@@ -194,25 +194,45 @@ public class NewJFrame2 extends javax.swing.JFrame {
         jLabel12.setBackground(new java.awt.Color(102, 255, 102));
         jLabel12.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
         jLabel12.setForeground(new java.awt.Color(255, 51, 51));
-        jLabel12.setText("                                           QUẢN LÝ SINH VIÊN");
+        jLabel12.setText("                                           QUAN LY SINH VIEN");
         jLabel12.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(51, 255, 204), 5, true));
 
-        btnAdd.setText("Thêm");
+        btnAdd.setText("Them");
         btnAdd.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnAddActionPerformed(evt);
             }
         });
 
-        btnDel.setText("Xóa");
+        btnDel.setText("Xoa");
+        btnDel.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnDelActionPerformed(evt);
+            }
+        });
 
-        btnEdit.setText("Sửa");
+        btnEdit.setText("Sua");
+        btnEdit.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnEditActionPerformed(evt);
+            }
+        });
 
-        btnCancel.setText("Hủy");
+        btnCancel.setText("Huy");
+        btnCancel.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnCancelActionPerformed(evt);
+            }
+        });
 
-        btnExit.setText("Thoát");
+        btnExit.setText("Thoat");
+        btnExit.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnExitActionPerformed(evt);
+            }
+        });
 
-        jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Danh sách sinh viên", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tahoma", 1, 14), new java.awt.Color(51, 51, 255))); // NOI18N
+        jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Danh sach sinh vien", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tahoma", 1, 14), new java.awt.Color(51, 51, 255))); // NOI18N
 
         jTable1.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -222,7 +242,7 @@ public class NewJFrame2 extends javax.swing.JFrame {
                 {null, null, null, null, null, null, null, null}
             },
             new String [] {
-                "Mã SV", "Họ Tên", "Giới Tính", "Ngày Sinh", "Nơi Sinh", "Địa Chỉ", "Số Điện Thoại", "Lớp"
+                "Ma SV", "Ho Ten", "Gioi Tinh", "Ngay Sinh", "Noi Sinh", "Dia Chi", "SDT", "Lop"
             }
         ));
         jTable1.setColumnSelectionAllowed(true);
@@ -243,7 +263,12 @@ public class NewJFrame2 extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
-        btnFind.setText("Tìm kiếm");
+        btnFind.setText("Tim kiem");
+        btnFind.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnFindActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -317,12 +342,32 @@ public class NewJFrame2 extends javax.swing.JFrame {
     }//GEN-LAST:event_gioitinhActionPerformed
 
     private void btnAddActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAddActionPerformed
-        // TODO add your handling code here:
+        // Nut them
     }//GEN-LAST:event_btnAddActionPerformed
 
     private void lopActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_lopActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_lopActionPerformed
+
+    private void btnDelActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDelActionPerformed
+        // Nut xoa
+    }//GEN-LAST:event_btnDelActionPerformed
+
+    private void btnEditActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEditActionPerformed
+        // Nut Sua
+    }//GEN-LAST:event_btnEditActionPerformed
+
+    private void btnCancelActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCancelActionPerformed
+        // Nut Huy
+    }//GEN-LAST:event_btnCancelActionPerformed
+
+    private void btnExitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnExitActionPerformed
+        // Nut thoat
+    }//GEN-LAST:event_btnExitActionPerformed
+
+    private void btnFindActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnFindActionPerformed
+        // Nut tim kiem
+    }//GEN-LAST:event_btnFindActionPerformed
 
     /**
      * @param args the command line arguments
