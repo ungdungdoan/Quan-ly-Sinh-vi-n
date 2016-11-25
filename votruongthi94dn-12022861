@@ -1,8 +1,0 @@
-NHỮNG YÊU CẦU QUẢN LÝ SINH VIÊN Ở KÝ TÚC XÁ CẦN
-+ Giao diện trực quan, dễ hiểu: người không biết máy tính cũng có thể sử dụng được.
-+ Quản lý : phòng có bao nhiêu người, số sinh viên và vị trí của phòng trong ký túc xá.
-+ Quản lý sinh viên:  phần mềm quản lý sinh viên ở ký túc xá nhằm cho phép người quản lý có thể cập nhật thông tin sinh viên thông qua giao diện, gửi thông tin cho server để người quản trị có thể cập nhật vào database cho người quản lý. Mọi thay đổi có thể ghi log lại với việc ghi rõ người dùng nào đã thay đổi.
-+ Thêm sinh viên: Cho phép người quản lý có thể thêm thông tin sinh viên như ngày sinh, họ tên, mã sinh viên và ứng với số phòng, tầng, ngày nhận và trả.
-+ Xóa sinh viên: Có thể xóa tên sinh viên ra khỏi dữ liệu.
-+ Sửa sinh viên: Với những sinh viên cần thay đổi thông tin, người quản lý cũng có thể thay đổi thông tin để server cập nhật dữ liệu mới.
-+ Tìm kiếm sinh viên: Từ giao diện của người quản lý có thể tìm kiếm thông tin sinh viên qua mã sinh viên hoặc tên để có thể dễ dàng thao tác sao cho phù hợp với yêu cầu..
